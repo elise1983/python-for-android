@@ -8,7 +8,7 @@ from multiprocessing import cpu_count
 
 
 class LibexpatRecipe(Recipe):
-    version = 'master'
+    version = 'R_2_5_0'
     url = 'https://github.com/libexpat/libexpat/archive/{version}.zip'
     built_libraries = {'libexpat.so': 'dist/lib'}
     depends = []

@@ -19,9 +19,6 @@ class Secp256k1Recipe(CppCompiledComponentsPythonRecipe):
         'libsecp256k1'
     ]
 
-    patches = [
-        "cross_compile.patch", "drop_setup_requires.patch",
-        "pkg-config.patch", "find_lib.patch", "no-download.patch"]
 
     def get_recipe_env(self, arch=None):
         env = super().get_recipe_env(arch)

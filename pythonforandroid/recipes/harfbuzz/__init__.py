@@ -20,7 +20,7 @@ class HarfbuzzRecipe(Recipe):
         https://sourceforge.net/projects/freetype/files/freetype2/2.5.3/
     """
 
-    version = '2.6.4'
+    version = '2.6.7'
     url = 'http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-{version}.tar.xz'  # noqa
     opt_depends = ['freetype']
     built_libraries = {'libharfbuzz.so': 'src/.libs'}

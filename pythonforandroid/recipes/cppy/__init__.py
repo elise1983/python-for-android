@@ -3,7 +3,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 class CppyRecipe(PythonRecipe):
     site_packages_name = 'cppy'
-    version = '1.1.0'
+    version = '1.2.1'
     url = 'https://github.com/nucleic/cppy/archive/{version}.zip'
     call_hostpython_via_targetpython = False
     # to be detected by the matplotlib install script

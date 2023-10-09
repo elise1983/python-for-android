@@ -5,7 +5,7 @@ import sh
 
 
 class VorbisRecipe(NDKRecipe):
-    version = '1.3.6'
+    version = '1.3.7'
     url = 'http://downloads.xiph.org/releases/vorbis/libvorbis-{version}.tar.gz'
     opt_depends = ['libogg']
 

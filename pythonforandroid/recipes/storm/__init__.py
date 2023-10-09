@@ -3,7 +3,7 @@ import sh
 
 
 class StormRecipe(PythonRecipe):
-    version = '0.20'
+    version = '0.26'
     url = 'https://launchpad.net/storm/trunk/{version}/+download/storm-{version}.tar.bz2'
     depends = []
     site_packages_name = 'storm'

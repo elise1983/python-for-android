@@ -3,8 +3,8 @@ from pythonforandroid.recipe import CompiledComponentsPythonRecipe
 
 class PymunkRecipe(CompiledComponentsPythonRecipe):
     name = "pymunk"
-    version = "6.0.0"
-    url = "https://pypi.python.org/packages/source/p/pymunk/pymunk-{version}.zip"
+    version = "6.5.1"
+    url = "https://github.com/viblo/pymunk/archive/{version}.zip"
     depends = ["cffi", "setuptools"]
     call_hostpython_via_targetpython = False
 

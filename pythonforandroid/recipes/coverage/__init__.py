@@ -3,13 +3,13 @@ from pythonforandroid.recipe import PythonRecipe
 
 class CoverageRecipe(PythonRecipe):
 
-    version = '4.1'
+    version = '7.3.2'
 
-    url = 'https://pypi.python.org/packages/2d/10/6136c8e10644c16906edf4d9f7c782c0f2e7ed47ff2f41f067384e432088/coverage-{version}.tar.gz'
+    url = 'https://files.pythonhosted.org/packages/57/44/ecd5442163c53f333bfcd2e7f428457a68b008a4b65d436a64b1db362451/coverage-7.3.2.tar.gz'
 
     depends = ['hostpython3', 'setuptools']
 
-    patches = ['fallback-utf8.patch']
+
 
     site_packages_name = 'coverage'
 

@@ -16,7 +16,7 @@ class ProtobufCppRecipe(CppCompiledComponentsPythonRecipe):
       - build and install python binding for protobuf_cpp
     """
     name = 'protobuf_cpp'
-    version = '3.6.1'
+    version = '24.4'
     url = 'https://github.com/google/protobuf/releases/download/v{version}/protobuf-python-{version}.tar.gz'
     call_hostpython_via_targetpython = False
     depends = ['cffi', 'setuptools']

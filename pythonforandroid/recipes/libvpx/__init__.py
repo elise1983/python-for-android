@@ -14,7 +14,7 @@ TARGETS = {
 
 
 class VPXRecipe(Recipe):
-    version = '1.11.0'
+    version = '1.13.0'
     url = 'https://github.com/webmproject/libvpx/archive/v{version}.tar.gz'
 
     patches = [

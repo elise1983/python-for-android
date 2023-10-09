@@ -6,13 +6,12 @@ from os.path import join
 
 
 class PyjniusRecipe(CythonRecipe):
-    version = '1.5.0'
+    version = '1.6.0'
     url = 'https://github.com/kivy/pyjnius/archive/{version}.zip'
     name = 'pyjnius'
     depends = [('genericndkbuild', 'sdl2'), 'six']
     site_packages_name = 'jnius'
 
-    patches = [('genericndkbuild_jnienv_getter.patch', will_build('genericndkbuild'))]
 
     def get_recipe_env(self, arch):
         env = super().get_recipe_env(arch)

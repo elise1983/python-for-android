@@ -35,7 +35,7 @@ class HostPython3Recipe(Recipe):
         :class:`~pythonforandroid.python.HostPythonRecipe`
     '''
 
-    version = '3.10.10'
+    version = '3.11.5'
     name = 'hostpython3'
 
     build_subdir = 'native-build'
@@ -46,7 +46,7 @@ class HostPython3Recipe(Recipe):
     '''The default url to download our host python recipe. This url will
     change depending on the python version set in attribute :attr:`version`.'''
 
-    patches = ['patches/pyconfig_detection.patch']
+
 
     @property
     def _exe_name(self):

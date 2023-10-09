@@ -6,8 +6,8 @@ import sh
 
 
 class LibxsltRecipe(Recipe):
-    version = '1.1.34'
-    url = 'http://xmlsoft.org/sources/libxslt-{version}.tar.gz'
+    version = '1.1.38'
+    url = 'https://gitlab.gnome.org/GNOME/libxslt/-/archive/v{version}/libxslt-v{version}.tar.gz'
     depends = ['libxml2']
     patches = ['fix-dlopen.patch']
     built_libraries = {

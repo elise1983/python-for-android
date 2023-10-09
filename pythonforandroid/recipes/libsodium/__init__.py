@@ -6,7 +6,7 @@ import sh
 
 
 class LibsodiumRecipe(Recipe):
-    version = '1.0.16'
+    version = '1.0.19'
     url = 'https://github.com/jedisct1/libsodium/releases/download/{version}/libsodium-{version}.tar.gz'
     depends = []
     patches = ['size_max_fix.patch']

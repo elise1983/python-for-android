@@ -9,8 +9,8 @@ from pythonforandroid.recipe import Recipe
 
 
 class LibwebpRecipe(Recipe):
-    version = '1.1.0'
-    url = 'https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-{version}.tar.gz'  # noqa
+    version = '1.3.0'
+    url = 'https://github.com/webmproject/libwebp/archive/v{version}.tar.gz'  # noqa
     depends = []
     built_libraries = {
         'libwebp.so': 'installation/lib',

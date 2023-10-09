@@ -4,7 +4,7 @@ import sh
 
 
 class OggRecipe(Recipe):
-    version = '1.3.3'
+    version = '1.3.4'
     url = 'http://downloads.xiph.org/releases/ogg/libogg-{version}.tar.gz'
     built_libraries = {'libogg.so': 'src/.libs'}
 

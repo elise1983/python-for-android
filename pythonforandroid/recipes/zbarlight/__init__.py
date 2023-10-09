@@ -4,7 +4,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 class ZBarLightRecipe(PythonRecipe):
 
-    version = '2.1'
+    version = '3.0'
 
     url = 'https://github.com/Polyconseil/zbarlight/archive/{version}.tar.gz'  # noqa
 

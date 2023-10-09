@@ -7,7 +7,7 @@ import sh
 
 class LibIconvRecipe(Recipe):
 
-    version = '1.16'
+    version = '1.17'
 
     url = 'https://ftp.gnu.org/pub/gnu/libiconv/libiconv-{version}.tar.gz'
 

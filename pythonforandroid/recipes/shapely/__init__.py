@@ -3,7 +3,7 @@ from os.path import join
 
 
 class ShapelyRecipe(CythonRecipe):
-    version = '1.7a1'
+    version = '2.0.1'
     url = 'https://github.com/Toblerity/Shapely/archive/{version}.tar.gz'
     depends = ['setuptools', 'libgeos']
 

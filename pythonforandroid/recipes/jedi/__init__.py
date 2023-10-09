@@ -2,7 +2,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class JediRecipe(PythonRecipe):
-    version = 'v0.9.0'
+    version = 'v0.19.0'
     url = 'https://github.com/davidhalter/jedi/archive/{version}.tar.gz'
 
     patches = ['fix_MergedNamesDict_get.patch']

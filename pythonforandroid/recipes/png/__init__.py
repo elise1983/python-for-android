@@ -7,7 +7,7 @@ import sh
 
 class PngRecipe(Recipe):
     name = 'png'
-    version = '1.6.37'
+    version = '1.6.4'
     url = 'https://github.com/glennrp/libpng/archive/v{version}.zip'
     built_libraries = {'libpng16.so': '.libs'}
 

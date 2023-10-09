@@ -6,7 +6,7 @@ import sh
 
 
 class SnappyRecipe(Recipe):
-    version = '1.1.7'
+    version = '1.1.10'
     url = 'https://github.com/google/snappy/archive/{version}.tar.gz'
     built_libraries = {'libsnappy.so': '.'}
 

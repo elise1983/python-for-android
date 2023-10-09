@@ -4,7 +4,7 @@ import sh
 
 
 class ApswRecipe(PythonRecipe):
-    version = '3.15.0-r1'
+    version = '3.43.1.1'
     url = 'https://github.com/rogerbinns/apsw/archive/{version}.tar.gz'
     depends = ['sqlite3', 'setuptools']
     call_hostpython_via_targetpython = False

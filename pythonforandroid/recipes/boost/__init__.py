@@ -34,11 +34,10 @@ class BoostRecipe(Recipe):
             - Bumped version number to 1.68.0
             - Adapted to work with ndk-r19+
     '''
-    version = '1.69.0'
-    url = (
-        'https://downloads.sourceforge.net/project/boost/'
-        'boost/{version}/boost_{version_underscore}.tar.bz2'
-    )
+    version = '1.83.0'
+    url = ('https://sourceforge.net/projects/boost/files/boost/{version}/boost_{version_underscore}.tar.gz')
+
+
     depends = ['python3']
     patches = [
         'disable-so-version.patch',

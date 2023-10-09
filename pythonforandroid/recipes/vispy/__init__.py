@@ -2,7 +2,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class VispyRecipe(PythonRecipe):
-    version = '0.4.0'
+    version = '0.14.1'
     url = 'https://github.com/vispy/vispy/archive/v{version}.tar.gz'
     depends = ['numpy', 'pysdl2']
     patches = ['disable_freetype.patch',

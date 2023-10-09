@@ -7,8 +7,8 @@ from os.path import join
 
 
 class LibpcreRecipe(Recipe):
-    version = '8.44'
-    url = 'https://ftp.pcre.org/pub/pcre/pcre-{version}.tar.bz2'
+    version = '8.45'
+    url = 'https://sourceforge.net/projects/pcre/files/pcre/{version}/pcre-{version}.tar.gz'
 
     built_libraries = {'libpcre.so': '.libs'}
 

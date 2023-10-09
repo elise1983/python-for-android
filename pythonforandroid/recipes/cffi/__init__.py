@@ -7,12 +7,11 @@ class CffiRecipe(CompiledComponentsPythonRecipe):
     Extra system dependencies: autoconf, automake and libtool.
     """
     name = 'cffi'
-    version = '1.15.1'
+    version = '1.16.0'
     url = 'https://pypi.python.org/packages/source/c/cffi/cffi-{version}.tar.gz'
 
     depends = ['setuptools', 'pycparser', 'libffi']
 
-    patches = ['disable-pkg-config.patch']
 
     # call_hostpython_via_targetpython = False
     install_in_hostpython = True

@@ -3,7 +3,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class FlaskRecipe(PythonRecipe):
-    version = '2.0.3'
+    version = '3.0.0'
     url = 'https://github.com/pallets/flask/archive/{version}.zip'
 
     depends = ['setuptools']

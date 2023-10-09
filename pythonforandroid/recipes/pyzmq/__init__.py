@@ -10,7 +10,7 @@ import glob
 
 class PyZMQRecipe(CythonRecipe):
     name = 'pyzmq'
-    version = '20.0.0'
+    version = '25.1.1'
     url = 'https://github.com/zeromq/pyzmq/archive/v{version}.zip'
     site_packages_name = 'zmq'
     depends = ['setuptools', 'libzmq']

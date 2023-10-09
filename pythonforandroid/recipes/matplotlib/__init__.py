@@ -7,7 +7,7 @@ import shutil
 
 class MatplotlibRecipe(CppCompiledComponentsPythonRecipe):
 
-    version = '3.5.2'
+    version = '3.8.0'
     url = 'https://github.com/matplotlib/matplotlib/archive/v{version}.zip'
 
     depends = ['kiwisolver', 'numpy', 'pillow', 'setuptools', 'freetype']

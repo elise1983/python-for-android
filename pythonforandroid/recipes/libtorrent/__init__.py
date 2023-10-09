@@ -43,8 +43,8 @@ class LibtorrentRecipe(Recipe):
             - Bumped version number to 1.2.1
             - Adapted to work with ndk-r19+
     '''
-    version = '1_2_1'
-    url = 'https://github.com/arvidn/libtorrent/archive/libtorrent-{version}.tar.gz'
+    version = '2.0.9'
+    url = 'https://github.com/arvidn/libtorrent/v{version}.tar.gz'
 
     depends = ['boost']
     opt_depends = ['openssl']

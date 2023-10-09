@@ -2,7 +2,7 @@ from pythonforandroid.recipe import CppCompiledComponentsPythonRecipe
 
 
 class PyLevelDBRecipe(CppCompiledComponentsPythonRecipe):
-    version = '0.194'
+    version = '0.201'
     url = ('https://pypi.python.org/packages/source/l/leveldb/'
            'leveldb-{version}.tar.gz')
     depends = ['snappy', 'leveldb', 'setuptools']

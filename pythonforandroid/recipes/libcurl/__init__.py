@@ -7,8 +7,8 @@ from multiprocessing import cpu_count
 
 
 class LibcurlRecipe(Recipe):
-    version = '7.55.1'
-    url = 'https://curl.haxx.se/download/curl-7.55.1.tar.gz'
+    version = '8.3.0'
+    url = 'https://curl.se/download/curl-8.3.0.tar.gz'
     built_libraries = {'libcurl.so': 'dist/lib'}
     depends = ['openssl']
 

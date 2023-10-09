@@ -25,7 +25,7 @@ def arch_to_toolchain(arch):
 class LapackRecipe(Recipe):
 
     name = 'lapack'
-    version = 'v3.10.1'
+    version = 'v3.11.0'
     url = 'https://github.com/Reference-LAPACK/lapack/archive/{version}.tar.gz'
     libdir = 'build/install/lib'
     built_libraries = {'libblas.so': libdir, 'liblapack.so': libdir, 'libcblas.so': libdir}

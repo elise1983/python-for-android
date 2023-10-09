@@ -4,12 +4,12 @@ import sh
 
 
 class FFMpegRecipe(Recipe):
-    version = 'n4.3.1'
+    version = '6.0'
     # Moved to github.com instead of ffmpeg.org to improve download speed
-    url = 'https://github.com/FFmpeg/FFmpeg/archive/{version}.zip'
+    url = 'https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz'
     depends = ['sdl2']  # Need this to build correct recipe order
     opts_depends = ['openssl', 'ffpyplayer_codecs']
-    patches = ['patches/configure.patch']
+
 
     def should_build(self, arch):
         build_dir = self.get_build_dir(arch.arch)

@@ -6,9 +6,9 @@ from pythonforandroid.util import ensure_dir
 
 
 class Sqlite3Recipe(NDKRecipe):
-    version = '3.35.5'
+    version = '3.43.1'
     # Don't forget to change the URL when changing the version
-    url = 'https://www.sqlite.org/2021/sqlite-amalgamation-3350500.zip'
+    url = 'https://www.sqlite.org/2023/sqlite-amalgamation-3430100.zip'
     generated_libraries = ['sqlite3']
 
     def should_build(self, arch):

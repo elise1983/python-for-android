@@ -7,8 +7,8 @@ from os.path import join
 
 class LibmysqlclientRecipe(Recipe):
     name = 'libmysqlclient'
-    version = 'master'
-    url = 'https://github.com/0x-ff/libmysql-android/archive/{version}.zip'
+    version = '8.1.0'
+    url = 'https://dev.mysql.com/downloads/file/?id=520764'
     # version = '5.5.47'
     # url = 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-{version}.tar.gz'
     #

@@ -5,7 +5,7 @@ import sh
 
 
 class OpenALRecipe(NDKRecipe):
-    version = '1.21.1'
+    version = '1.23.1'
     url = 'https://github.com/kcat/openal-soft/archive/refs/tags/{version}.tar.gz'
 
     generated_libraries = ['libopenal.so']

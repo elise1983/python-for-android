@@ -5,7 +5,7 @@ from pythonforandroid.util import rmdir
 
 
 class TwistedRecipe(CythonRecipe):
-    version = '20.3.0'
+    version = '23.8.0'
     url = 'https://github.com/twisted/twisted/archive/twisted-{version}.tar.gz'
 
     depends = ['setuptools', 'zope_interface', 'incremental', 'constantly']

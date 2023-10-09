@@ -3,7 +3,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class SympyRecipe(PythonRecipe):
-    version = '1.1.1'
+    version = '1.12'
     url = 'https://github.com/sympy/sympy/releases/download/sympy-{version}/sympy-{version}.tar.gz'
 
     depends = ['mpmath']

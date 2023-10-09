@@ -4,7 +4,7 @@ import os.path
 
 
 class LibpqRecipe(Recipe):
-    version = '10.12'
+    version = '16rc1'
     url = 'http://ftp.postgresql.org/pub/source/v{version}/postgresql-{version}.tar.bz2'
     depends = []
 

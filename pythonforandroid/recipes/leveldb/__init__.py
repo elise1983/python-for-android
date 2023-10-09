@@ -7,7 +7,7 @@ import sh
 
 
 class LevelDBRecipe(Recipe):
-    version = '1.22'
+    version = '1.23'
     url = 'https://github.com/google/leveldb/archive/{version}.tar.gz'
     depends = ['snappy']
     built_libraries = {'libleveldb.so': '.'}

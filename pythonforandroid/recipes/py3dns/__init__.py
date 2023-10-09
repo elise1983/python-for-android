@@ -3,7 +3,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 class Py3DNSRecipe(PythonRecipe):
     site_packages_name = 'DNS'
-    version = '3.2.1'
+    version = '4.0.0'
     url = 'https://launchpad.net/py3dns/trunk/{version}/+download/py3dns-{version}.tar.gz'
     depends = ['setuptools']
     patches = ['patches/android.patch']

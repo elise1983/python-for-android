@@ -23,7 +23,7 @@ class TFLiteRuntimeRecipe(PythonRecipe):
     #
     ###############################################################
 
-    version = '2.8.0'
+    version = '2.14.0'
     url = 'https://github.com/tensorflow/tensorflow/archive/refs/tags/v{version}.zip'
     depends = ['pybind11', 'numpy']
     patches = ['CMakeLists.patch', 'build_with_cmake.patch']

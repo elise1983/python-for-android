@@ -3,7 +3,7 @@ from pythonforandroid.recipe import CompiledComponentsPythonRecipe, Recipe
 
 class BCryptRecipe(CompiledComponentsPythonRecipe):
     name = 'bcrypt'
-    version = '3.1.7'
+    version = '4.0.1'
     url = 'https://github.com/pyca/bcrypt/archive/{version}.tar.gz'
     depends = ['openssl', 'cffi']
     call_hostpython_via_targetpython = False

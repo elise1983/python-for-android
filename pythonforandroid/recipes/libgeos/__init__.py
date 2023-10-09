@@ -7,7 +7,7 @@ import sh
 
 
 class LibgeosRecipe(Recipe):
-    version = '3.7.1'
+    version = '3.12.0'
     url = 'https://github.com/libgeos/libgeos/archive/{version}.zip'
     depends = []
     built_libraries = {

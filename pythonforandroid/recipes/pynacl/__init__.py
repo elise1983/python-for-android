@@ -4,7 +4,7 @@ import os
 
 class PyNaCLRecipe(CompiledComponentsPythonRecipe):
     name = 'pynacl'
-    version = '1.3.0'
+    version = '1.5.0'
     url = 'https://pypi.python.org/packages/source/P/PyNaCl/PyNaCl-{version}.tar.gz'
 
     depends = ['hostpython3', 'six', 'setuptools', 'cffi', 'libsodium']

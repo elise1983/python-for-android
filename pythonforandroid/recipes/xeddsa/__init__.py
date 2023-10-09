@@ -6,7 +6,7 @@ import sh
 
 class XedDSARecipe(CythonRecipe):
     name = 'xeddsa'
-    version = '0.4.4'
+    version = '1.0.2'
     url = 'https://pypi.python.org/packages/source/X/XEdDSA/XEdDSA-{version}.tar.gz'
     depends = [
         'setuptools',

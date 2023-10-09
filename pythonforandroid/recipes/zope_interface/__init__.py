@@ -8,7 +8,7 @@ from pythonforandroid.util import rmdir
 class ZopeInterfaceRecipe(PythonRecipe):
     call_hostpython_via_targetpython = False
     name = 'zope_interface'
-    version = '4.1.3'
+    version = '6.1'
     url = 'https://pypi.python.org/packages/source/z/zope.interface/zope.interface-{version}.tar.gz'
     site_packages_name = 'zope.interface'
     depends = ['setuptools']

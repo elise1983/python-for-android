@@ -6,7 +6,7 @@ import sh
 
 
 class M2CryptoRecipe(CompiledComponentsPythonRecipe):
-    version = '0.30.1'
+    version = '0.39.0'
     url = 'https://pypi.python.org/packages/source/M/M2Crypto/M2Crypto-{version}.tar.gz'
     depends = ['openssl', 'setuptools']
     site_packages_name = 'M2Crypto'

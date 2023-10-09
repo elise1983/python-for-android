@@ -13,8 +13,8 @@ def arch_to_toolchain(arch):
 
 class ScipyRecipe(CompiledComponentsPythonRecipe):
 
-    version = '1.8.1'
-    url = f'https://github.com/scipy/scipy/releases/download/v{version}/scipy-{version}.zip'
+    version = '1.11.3'
+    url = 'https://github.com/scipy/scipy/releases/download/v{version}/scipy-{version}.zip'
     site_packages_name = 'scipy'
     depends = ['setuptools', 'cython', 'numpy', 'lapack', 'pybind11']
     call_hostpython_via_targetpython = False

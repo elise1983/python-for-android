@@ -12,7 +12,7 @@ class JpegRecipe(Recipe):
         version of the official git repo.
     '''
     name = 'jpeg'
-    version = '2.0.1'
+    version = '3.0.0'
     url = 'https://github.com/libjpeg-turbo/libjpeg-turbo/archive/{version}.tar.gz'  # noqa
     built_libraries = {'libjpeg.a': '.', 'libturbojpeg.a': '.'}
     # we will require this below patch to build the shared library

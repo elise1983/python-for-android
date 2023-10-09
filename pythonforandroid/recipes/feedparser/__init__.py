@@ -2,7 +2,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class FeedparserPyRecipe(PythonRecipe):
-    version = '5.2.1'
+    version = '6.0.10'
     url = 'https://github.com/kurtmckee/feedparser/archive/{version}.tar.gz'
     depends = ['setuptools']
     site_packages_name = 'feedparser'

@@ -6,7 +6,7 @@ import sh
 
 
 class LibZMQRecipe(Recipe):
-    version = '4.3.2'
+    version = '4.3.5'
     url = 'https://github.com/zeromq/libzmq/releases/download/v{version}/zeromq-{version}.zip'
     depends = []
     built_libraries = {'libzmq.so': 'src/.libs'}

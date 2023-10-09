@@ -2,7 +2,7 @@ from pythonforandroid.recipe import PythonRecipe
 
 
 class RuamelYamlRecipe(PythonRecipe):
-    version = '0.15.77'
+    version = '0.17.35'
     url = 'https://pypi.python.org/packages/source/r/ruamel.yaml/ruamel.yaml-{version}.tar.gz'
     depends = ['setuptools']
     site_packages_name = 'ruamel'

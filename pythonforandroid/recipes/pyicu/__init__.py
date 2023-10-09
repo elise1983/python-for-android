@@ -3,7 +3,7 @@ from pythonforandroid.recipe import CppCompiledComponentsPythonRecipe
 
 
 class PyICURecipe(CppCompiledComponentsPythonRecipe):
-    version = '1.9.2'
+    version = '2.11'
     url = ('https://pypi.python.org/packages/source/P/PyICU/'
            'PyICU-{version}.tar.gz')
     depends = ["icu"]
