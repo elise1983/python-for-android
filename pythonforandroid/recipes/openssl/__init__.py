@@ -8,7 +8,7 @@ import sh
 
 class OpenSSLRecipe(Recipe):
 
-    version = '3'
+    version = '3.1'
         #v3.1.3
 
     url = 'https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.3.tar.gz'
@@ -53,13 +53,13 @@ class OpenSSLRecipe(Recipe):
         in the format: `-L<lib directory> -l<lib>`'''
         return self.link_dirs_flags(arch) + self.link_libs_flags()
 
-    def get_recipe_env(self, arch=None):
-        env = super().get_recipe_env(arch)
-        env['OPENSSL_VERSION'] = self.version
-        env['MAKE'] = 'make'  # This removes the '-j5', which isn't safe
-        env['CC'] = 'clang'
-        env['ANDROID_NDK_HOME'] = self.ctx.ndk_dir
-        return env
+    #def get_recipe_env(self, arch=None):
+    #    env = super().get_recipe_env(arch)
+    #    env['OPENSSL_VERSION'] = self.version
+    #    env['MAKE'] = 'make'  # This removes the '-j5', which isn't safe
+    #    env['CC'] = 'clang'
+    #    env['ANDROID_NDK_HOME'] = self.ctx.ndk_dir
+    #    return env
 
     def select_build_arch(self, arch):
         aname = arch.arch
@@ -73,7 +73,7 @@ class OpenSSLRecipe(Recipe):
             return 'android-x86_64'
         if 'x86' in aname:
             return 'android-x86'
-      #  return 'linux-armv4'
+        return 'linux-armv4'
 
     def build_arch(self, arch):
         env = self.get_recipe_env(arch)
