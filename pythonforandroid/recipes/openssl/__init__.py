@@ -14,8 +14,8 @@ class OpenSSLRecipe(Recipe):
     url = 'https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.3.tar.gz'
 
     built_libraries = {
-        'libcrypto{version}.so'.format(version=version): '.',
-        'libssl{version}.so'.format(version=version): '.',
+        'libcrypto.so.3': '.',
+        'libssl.so.3': '.',
     }
 
     #@property
@@ -61,38 +61,38 @@ class OpenSSLRecipe(Recipe):
     #    env['ANDROID_NDK_HOME'] = self.ctx.ndk_dir
     #    return env
 
-    def select_build_arch(self, arch):
-        aname = arch.arch
-        if 'arm64' in aname:
-            return 'android-arm64'
-        if 'v7a' in aname:
-            return 'android-arm'
-        if 'arm' in aname:
-            return 'android'
-        if 'x86_64' in aname:
-            return 'android-x86_64'
-        if 'x86' in aname:
-            return 'android-x86'
-        return 'linux-armv4'
-
-    def build_arch(self, arch):
-        env = self.get_recipe_env(arch)
-        with current_directory(self.get_build_dir(arch.arch)):
-            # sh fails with code 255 trying to execute ./Configure
+   # def select_build_arch(self, arch):
+   #     aname = arch.arch
+   #     if 'arm64' in aname:
+   #         return 'android-arm64'
+   #     if 'v7a' in aname:
+   #         return 'android-arm'
+  #      if 'arm' in aname:
+  #          return 'android'
+  #      if 'x86_64' in aname:
+  #          return 'android-x86_64'
+  #      if 'x86' in aname:
+  #          return 'android-x86'
+  #      return 'linux-armv4'
+#
+   # def build_arch(self, arch):
+   #     env = self.get_recipe_env(arch)
+  #      with current_directory(self.get_build_dir(arch.arch)):
+   #         # sh fails with code 255 trying to execute ./Configure
             # so instead we manually run perl passing in Configure
-            perl = sh.Command('perl')
-            buildarch = self.select_build_arch(arch)
-            config_args = [
-                'shared',
-                'no-dso',
-                'no-asm',
-                buildarch,
-               '-D__ANDROID_API__={}'.format(self.ctx.ndk_api),
-            ]
-            shprint(perl, 'Configure', *config_args, _env=env)
+  #          perl = sh.Command('perl')
+   #         buildarch = self.select_build_arch(arch)
+  #          config_args = [
+   #             'shared',
+   #             'no-dso',
+   #             'no-asm',
+   #             buildarch,
+   #            '-D__ANDROID_API__={}'.format(self.ctx.ndk_api),
+    #        ]
+    #        shprint(perl, 'Configure', *config_args, _env=env)
 
 
-            shprint(sh.make, 'build_libs', _env=env)
+    #        shprint(sh.make, 'build_libs', _env=env)
 
 
 recipe = OpenSSLRecipe()
