@@ -14,9 +14,9 @@ class OpenSSLRecipe(Recipe):
     url = 'https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.3.tar.gz'
 
     built_libraries = {
-        'libcrypto.so.{version}',
-        'libssl.so.{version}'
-        }
+        'libcrypto{version}.so'.format(version=version): '.',
+        'libssl{version}.so'.format(version=version): '.',
+    }
 
     #@property
     #def versioned_url(self):
