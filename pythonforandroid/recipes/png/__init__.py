@@ -9,22 +9,22 @@ class PngRecipe(Recipe):
     name = 'png'
     version = '1.6.4'
     url = 'https://github.com/glennrp/libpng/archive/v{version}.zip'
-    built_libraries = {'libpng16.so': '.libs'}
+#    built_libraries = {'libpng16.so': '.libs'}
 
-    def build_arch(self, arch):
-        build_dir = self.get_build_dir(arch.arch)
-        with current_directory(build_dir):
-            env = self.get_recipe_env(arch)
-            shprint(
-                sh.Command('./configure'),
-                '--host=' + arch.command_prefix,
-                '--target=' + arch.command_prefix,
-                '--disable-static',
-                '--enable-shared',
-                '--prefix={}/install'.format(self.get_build_dir(arch.arch)),
-                _env=env,
-            )
-            shprint(sh.make, '-j', str(cpu_count()), _env=env)
+ #   def build_arch(self, arch):
+  #      build_dir = self.get_build_dir(arch.arch)
+  #      with current_directory(build_dir):
+  #          env = self.get_recipe_env(arch)
+   #         shprint(
+   #             sh.Command('./configure'),
+    #            '--host=' + arch.command_prefix,
+     #           '--target=' + arch.command_prefix,
+    #            '--disable-static',
+    #            '--enable-shared',
+       #         '--prefix={}/install'.format(self.get_build_dir(arch.arch)),
+    #            _env=env,
+       #     )
+        #    shprint(sh.make, '-j', str(cpu_count()), _env=env)
 
 
 recipe = PngRecipe()

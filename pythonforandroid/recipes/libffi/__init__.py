@@ -34,8 +34,8 @@ class LibffiRecipe(Recipe):
              #       '--enable-shared', _env=env)
           #  shprint(sh.make, '-j', str(cpu_count()), 'libffi.la', _env=env)
 
-   # def get_include_dirs(self, arch):
-      #  return [join(self.get_build_dir(arch.arch), 'include')]
+    def get_include_dirs(self, arch):
+        return [join(self.get_build_dir(arch.arch), 'include')]
 
 
 recipe = LibffiRecipe()
