@@ -50,7 +50,7 @@ class OpenSSLRecipe(Recipe):
     url_version = '3.1.3'
     '''the version used to download our libraries'''
 
-    url = 'https://www.openssl.org/source/openssl-{url_version}.tar.gz'
+    url = 'https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.3.tar.gz'
 
     built_libraries = {
         'libcrypto{version}.so'.format(version=version): '.',
