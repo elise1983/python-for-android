@@ -14,8 +14,8 @@ class LibffiRecipe(Recipe):
         - `libltdl-dev` which defines the `LT_SYS_SYMBOL_USCORE` macro
     """
     name = 'libffi'
-    version = 'v3.4.4'
-    url = 'https://github.com/libffi/libffi/archive/{version}.tar.gz'
+    version = 'v3.4.2'
+    url = 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.4.2.orig.tar.gz'
 
 
 
