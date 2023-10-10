@@ -14,9 +14,9 @@ class OpenSSLRecipe(Recipe):
     url = 'https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.3.tar.gz'
 
     built_libraries = {
-        'libcrypto{version}.so'.format(version=version): '.',
-        'libssl{version}.so'.format(version=version): '.',
-    }
+        'libcrypto.so.{version}',
+        'libssl.so.{version}'
+        }
 
     #@property
     #def versioned_url(self):
@@ -73,7 +73,7 @@ class OpenSSLRecipe(Recipe):
             return 'android-x86_64'
         if 'x86' in aname:
             return 'android-x86'
-        return 'linux-armv4'
+      #  return 'linux-armv4'
 
     def build_arch(self, arch):
         env = self.get_recipe_env(arch)
@@ -87,10 +87,10 @@ class OpenSSLRecipe(Recipe):
                 'no-dso',
                 'no-asm',
                 buildarch,
-                '-D__ANDROID_API__={}'.format(self.ctx.ndk_api),
+               '-D__ANDROID_API__={}'.format(self.ctx.ndk_api),
             ]
             shprint(perl, 'Configure', *config_args, _env=env)
-            self.apply_patch('disable-sover.patch', arch.arch)
+
 
             shprint(sh.make, 'build_libs', _env=env)
 
