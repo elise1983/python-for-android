@@ -75,22 +75,22 @@ class OpenSSLRecipe(Recipe):
                 ' -I' + join(openssl_includes, 'internal') +
                 ' -I' + join(openssl_includes, 'openssl'))
 
-   # def link_dirs_flags(self, arch):
-   #     '''Returns a string with the appropriate `-L<lib directory>` to link
-  #      with the openssl libs. This string is usually added to the environment
-  #      variable `LDFLAGS`'''
-  #      return ' -L' + self.get_build_dir(arch.arch)
-#
- #   def link_libs_flags(self):
- #       '''Returns a string with the appropriate `-l<lib>` flags to link with
- #       the openssl libs. This string is usually added to the environment
- #       variable `LIBS`'''
-  #      return ' -lcrypto{version} -lssl{version}'.format(version=self.version)
-#
- #   def link_flags(self, arch):
- #       '''Returns a string with the flags to link with the openssl libraries
-  #      in the format: `-L<lib directory> -l<lib>`'''
-   #     return self.link_dirs_flags(arch) + self.link_libs_flags()
+    def link_dirs_flags(self, arch):
+        '''Returns a string with the appropriate `-L<lib directory>` to link
+        with the openssl libs. This string is usually added to the environment
+        variable `LDFLAGS`'''
+        return ' -L' + self.get_build_dir(arch.arch)
+
+    def link_libs_flags(self):
+        '''Returns a string with the appropriate `-l<lib>` flags to link with
+        the openssl libs. This string is usually added to the environment
+        variable `LIBS`'''
+        return ' -lcrypto{version} -lssl{version}'.format(version=self.version)
+
+    def link_flags(self, arch):
+        '''Returns a string with the flags to link with the openssl libraries
+        in the format: `-L<lib directory> -l<lib>`'''
+        return self.link_dirs_flags(arch) + self.link_libs_flags()
 
   #  def get_recipe_env(self, arch=None):
   #      env = super().get_recipe_env(arch)
