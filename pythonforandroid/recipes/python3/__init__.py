@@ -72,6 +72,7 @@ class Python3Recipe(TargetPythonRecipe):
     configure_args = (
         '--host={android_host}',
         '--build={android_build}',
+        '--with-build-python=/usr/local/bin/python3.11',
         '--enable-shared',
         '--enable-ipv6',
         'ac_cv_file__dev_ptmx=yes',
